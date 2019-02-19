@@ -1,0 +1,47 @@
+.Create-Your-Account {
+    width: 762px;
+    height: 65px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: OpenSans;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+  }
+
+
+  .homeBtnContainer2 {
+    width: 100%;
+    display: block;
+  }
+
+  .homeBtnContainer2 label {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+  
+  .homeBtnContainer2 .btnPrimary {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+  }
+  
+  .homeBtnContainer2 .btnSecondary {
+    padding: 10px 0;
+    width: 48%;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  .homeBtnContainer2 .btnSecondary:last-child {
+    float: right;
+  }

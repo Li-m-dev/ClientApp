@@ -1,0 +1,21 @@
+.admin-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  height: 110px;
+  align-items: center;
+  .admin-header-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .admin-header-btns{
+    button{
+      background-color: white;
+      margin: 0 5px;
+      // border-radius: 5px;
+      padding: 5px 10px;
+    }
+  }
+}

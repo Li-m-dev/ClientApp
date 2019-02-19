@@ -1,0 +1,367 @@
+﻿
+.cowBackground {
+    background: url(/images/cow.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+}
+
+.wizardNav {
+    border-bottom: 1px solid #979797;
+    display: flex;
+}
+
+.wizardNav .closeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #979797;
+    padding: 20px;
+}
+
+.wizardNav .closeContainer:hover {
+    cursor: pointer;
+}
+
+.wizardNav .closeContainer img {
+    margin: 0 auto;
+    display: block;
+}
+
+.wizardNav .closeContainer p {
+    margin: 0;
+}
+
+.wizardNav .progressContainer {
+    border-right: 1px solid #979797;
+}
+
+.wizardNav .progressContainer {
+    display: flex;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.wizardNav .progressContainer img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 15px;
+}
+
+.wizardNav .header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bdbdbd;
+}
+
+.wizardNav p {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bdbdbd;
+}
+
+
+.wizardNav .activeWizardNav .header {
+    font-size: 20px;
+    font-weight: bold;
+    color: $primaryColor;
+}
+
+.wizardNav .activeWizardNav p {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.createContainer form label {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    display: block;
+}
+
+.createAccountForm .inline {
+    display: inline-block;
+}
+
+.createAccountForm .inline input {
+    display: block;
+    background-color: transparent !important;
+    border: 2px solid white !important;
+    color: white;
+    padding: 8px 15px;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.createAccountForm .inline button {
+    padding: 15px 25px;
+    position: relative;
+    top: 3px;
+    margin-left: 0;
+}
+
+.createAccountForm .inline ::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.createAccountForm .inline :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.createAccountForm .inline ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.membershipFormContainer h1 {
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $primaryColor;
+    text-shadow: none;
+    margin: 0;
+}
+
+.membershipFormContainer h3 {
+    font-family: "Open Sans";
+    text-shadow: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.membershipFormContainer label {
+    font-family: "Open Sans";
+    text-shadow: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a4a !important;
+    margin: 0;
+}
+
+.memberShipTypeContainer {
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.memberShipTypeContainer h1 {
+    padding-bottom: 10px;
+}
+
+.memberShipTypeContainer h3 {
+    padding-bottom: 25px;
+}
+
+.memberShipTypeContainer label {
+    padding-bottom: 5px;
+}
+
+.membershipFormContainer .k-combobox {
+    width: 300px;
+}
+
+.membershipForm {
+    padding-left: 60px;
+}
+
+.membershipForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.membershipForm input {
+    padding: 8px 8px;
+    height: auto !important;
+}
+
+.membershipForm .firstNameLastNameContainer div {
+    display: inline-block;
+}
+
+.membershipForm .firstNameLastNameContainer div input {
+    width: 250px !important;
+    margin-right: 15px;
+}
+
+.membershipForm .firstNameLastNameContainer {
+    margin-bottom: 25px;
+}
+
+.membershipForm .mailingAddressContainer div {
+    display: inline-block;
+}
+
+.membershipForm .mailingAddressContainer div input {
+    width: 250px !important;
+    margin-right: 15px;
+}
+
+.membershipForm .cityStateZip div {
+    display: inline-block;
+}
+
+.membershipForm .cityStateZip div input {
+    margin-right: 15px;
+}
+
+.membershipForm button {
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    max-width: initial;
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 15px 25px;
+}
+
+.membershipForm button:hover {
+    cursor: pointer;
+}
+
+.membershipForm p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+    text-shadow: none;
+}
+
+.billinFormContainer h1 {
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $primaryColor;
+    text-shadow: none;
+    margin: 0;
+}
+
+.billinFormContainer h3 {
+    font-family: "Open Sans";
+    text-shadow: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.billinFormContainer label {
+    display: block;
+    font-family: "Open Sans";
+    text-shadow: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a4a !important;
+    margin: 0;
+}
+
+.memberShipTypeContainer {
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.billinFormContainer .k-combobox {
+    width: 300px;
+}
+
+.billingForm label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.billingForm input {
+    padding: 8px 8px;
+    height: auto !important;
+}
+
+.billingForm button:hover {
+    cursor: pointer;
+}
+
+.billingForm button {
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    max-width: initial;
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 15px 25px;
+    margin-right: 15px;
+}
+
+.billingForm .secondary {
+    background-color: white;
+    color: $primaryColor;
+    border: 3px solid $primaryColor;
+}
+
+
+.billingForm p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+    text-shadow: none;
+}
+
+.billingForm div input {
+    margin-right: 15px;
+}
+
+.billingForm .billingZip {
+    margin-left: 15px;
+}
+
+.billingInformationTop {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.billingInformationTop h1 {
+    padding-bottom: 10px;
+}
+
+.billingInformationTop h3 {
+    padding-bottom: 20px;
+}
+
+.paymentContainer {
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.paymentContainer .accountNumber div {
+    display: inline-block;
+}
+
+.paymentContainer .routingNumber div {
+    display: inline-block;
+}
+
+.paymentContainer .cardNumber div {
+    display: inline-block;
+}

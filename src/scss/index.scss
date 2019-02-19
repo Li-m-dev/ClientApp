@@ -1,0 +1,26 @@
+﻿$primaryColor: #003a8c;
+@mixin btn-theme {
+  background-color: none;
+  border-color: $primaryColor;
+  &:hover {
+    background-color: $primaryColor;
+    color: white;
+  }
+  // &:active {
+  // }
+}
+
+@import "global.scss";
+
+@import "./AdminView//main.scss";
+@import "./AdminView/sideNav.scss";
+@import "./AdminView//adminHeader.scss";
+@import "./AdminView/modal.scss";
+@import "./AdminView//Pages/membership.scss";
+
+@import "PublicView/Navigation/nav.scss";
+@import "PublicView/Navigation/footer.scss";
+
+@import "PublicView/Pages/Home.scss";
+
+@import "PublicView/signupWizard.scss";

@@ -1,0 +1,135 @@
+[
+  {
+    "UserID": "985833c9-21f5-491a-b26a-52e167d05ecc",
+    "FirstName": "Lisa",
+    "LastName": "Walker",
+    "Email": "test@test.com",
+    "LastLogin": "2/11/2019",
+    "Phone": "214-774-4263",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": true
+  },
+  {
+    "UserID": "861965fb-721a-49ea-b540-130c9551cbec",
+    "FirstName": "Jason",
+    "LastName": "Skaggs",
+    "Email": "test1@test.com",
+    "LastLogin": "2/9/2019",
+    "Phone": "214-758-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 3,
+        "Description": "Inventory"
+      }
+    ],
+    "IsActive": true
+  },
+  {
+    "UserID": "dfd5752d-e501-4d8e-8dbd-0bb82bf3213a",
+    "FirstName": "John",
+    "LastName": "Anderson",
+    "Email": "test@ca.com",
+    "LastLogin": "2/11/2019",
+    "Phone": "214-774-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": false
+  },
+  {
+    "UserID": "027ab659-b892-4a40-b306-291a64d4c0a4",
+    "FirstName": "Scott",
+    "LastName": "W",
+    "Email": "test1@test.com",
+    "LastLogin": "2/9/2019",
+    "Phone": "214-758-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": true
+  },
+  {
+    "UserID": "cdc344fe-d2ab-442c-a884-9546f65d6934",
+    "FirstName": "Stacy",
+    "LastName": "Fox",
+    "Email": "test1@test.com",
+    "LastLogin": "2/9/2019",
+    "Phone": "214-758-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": false
+  },
+  {
+    "UserID": "01177ac1-e424-43cb-a380-f8422d31d695",
+    "FirstName": "Liberty",
+    "LastName": "Test",
+    "Email": "Liberty@test.com",
+    "LastLogin": "2/9/2019",
+    "Phone": "214-758-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": false
+  },
+  {
+    "UserID": "25e2e466-62c4-4b0c-ac50-72e1e6a351ee",
+    "FirstName": "test",
+    "LastName": "test",
+    "Email": "test1@test.com",
+    "LastLogin": "2/9/2019",
+    "Phone": "214-758-4262",
+    "Permissions": [
+      {
+        "PermissionID": 1,
+        "Description": "Admin"
+      },
+      {
+        "PermissionID": 2,
+        "Description": "Accounting"
+      }
+    ],
+    "IsActive": true
+  }
+]

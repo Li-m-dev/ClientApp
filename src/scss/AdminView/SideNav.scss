@@ -1,0 +1,46 @@
+.side-nav{
+  height: 100vh;
+  display: block;
+  font-weight: 600;
+}
+
+.side-nav-img{
+  border: lightgray 1px solid;
+  padding: 20px;
+}
+
+.side-nav-img img{
+  max-width: 30vw;
+}
+
+.side-nav-user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: lightgray 1px solid;
+  padding: 10px 30px;
+  font-size: 20px;
+  .user-info-btn{
+    padding-top: 10px; 
+    button{
+      background-color: none;
+      @include btn-theme;
+    }
+  }
+}
+.side-nav-dash{
+  border: lightgray 1px solid;
+  min-height: 74vh;
+  padding: 20px;
+
+.side-nav-dash-item{
+  // margin: 10px;
+  li{
+    list-style-type: none;
+  }
+}
+}
+.btn-link{
+  color: $primaryColor;
+  font-size: 22px;
+}

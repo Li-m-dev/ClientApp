@@ -1,0 +1,70 @@
+﻿
+/* Home */
+.homeContainer {
+    background-image: url('/images/homeBackground.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 97px - 70px);
+}
+
+.homeWelcomeContent {
+    margin-left: 15%;
+    padding-top: 75px;
+    padding-top: 25px;
+}
+
+.homeContainer h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.homeContainer h3 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans';
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.homeContainer p {
+    max-width: 900px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.homeBtnContainer {
+    max-width: 650px;
+    width: 100%;
+    display: block;
+}
+
+.homeBtnContainer .btnPrimary {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+}
+
+.homeBtnContainer .btnSecondary {
+    padding: 10px 0;
+    width: 48%;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.homeBtnContainer .btnSecondary:last-child {
+    float: right;
+}

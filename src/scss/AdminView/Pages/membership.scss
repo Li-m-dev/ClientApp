@@ -1,0 +1,8 @@
+// outsourcing class name styling:
+.k-switch-on .k-switch-container {
+  background-color: $primaryColor;
+}
+
+.k-switch-on .k-switch-container:hover {
+  background-color: darken($primaryColor, 10%);
+}
