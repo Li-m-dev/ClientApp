@@ -8,12 +8,14 @@ import {
   fetchUsers,
   updateAdminUser
 } from "../../../../Redux/Actions/Admin/ManageUserActions";
+import AdminSearch from "../../AdminSearch";
 
 class AdminMembership extends Component {
   state = {
     showModal: false,
     active: true,
-    selectedUser: {}
+    selectedUser: {},
+    staff: []
   };
   componentDidMount() {
     this.props.fetchUsers();
@@ -36,19 +38,34 @@ class AdminMembership extends Component {
     this.props.fetchUsers();
   };
 
+  filterStaff = searchTerm => {
+    const filteredStaff = this.props.user.users.filter(staff => {
+      return (
+        staff.FirstName.toLowerCase().includes(searchTerm) ||
+        staff.LastName.toLowerCase().includes(searchTerm) ||
+        staff.Email.toLowerCase().includes(searchTerm) ||
+        staff.Phone.toLowerCase().includes(searchTerm)
+      );
+    });
+    this.setState({ staff: filteredStaff });
+  };
+
   render() {
     // console.log(this.props);
-    const staffs = this.props.user.users.map(staff => {
+    const mapList = this.state.staff.length
+      ? this.state.staff
+      : this.props.user.users;
+    const staffs = mapList.map(staff => {
+      const rolesToDisplay = staff.Permissions.map(
+        role => " " + role.Description
+      )
+        .toString()
+        .trim();
       return (
         <tr key={staff.UserID}>
           <td>{staff.FirstName}</td>
           <td>{staff.LastName}</td>
-          <td>{staff.Permissions[0].Description}</td>
-          {/* <td>
-            {staff.Permissions.map(role => {
-              role.Description.toString();
-            })}
-          </td> */}
+          <td>{rolesToDisplay}</td>
           <td>{staff.Email}</td>
           <td>{staff.Phone}</td>
           <td>{staff.IsActive ? "YES" : "NO"}</td>
@@ -64,13 +81,13 @@ class AdminMembership extends Component {
             >
               Edit
             </button>
-            <Switch
+            {/* <Switch
               filter="boolean"
               onChange={this.toggleActive}
               onLabel={"Activate"}
               offLabel={"Deactivate"}
               checked={!staff.IsActive}
-            />
+            /> */}
           </td>
           <td>{staff.LastLogin}</td>
         </tr>
@@ -78,9 +95,12 @@ class AdminMembership extends Component {
     });
     return (
       <div>
-        <AdminHeader />
+        <AdminHeader staffs={this.props.user.users} />
         <div>
-          Search <input type="text" />
+          <AdminSearch
+            staffs={this.props.user.users}
+            customFunc={this.filterStaff}
+          />
           <button onClick={this.toggleModal}>Add New</button>
           <button>Export to Excel</button>
         </div>
@@ -93,7 +113,7 @@ class AdminMembership extends Component {
               <th>Email</th>
               <th>Phone</th>
               <th>Active</th>
-              <th>Activate/Deactivate</th>
+              <th>Edit</th>
               <th>Last Login</th>
             </tr>
             {staffs}

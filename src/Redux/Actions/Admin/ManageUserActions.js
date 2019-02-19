@@ -70,12 +70,12 @@ export function updateAdminUser(id, updatedUser) {
   //       })
   //     )
   // };
-  // let index = data.findIndex(user => {
-  //   user.UserID === id;
-  // });
-  // data[index] = updatedUser;
-  // return {
-  //   type: UPDATE_ADMIN_USER,
-  //   users: data
-  // };
+  let index = data.findIndex(user => {
+    return user.UserID === id;
+  });
+  data[index] = updatedUser;
+  return {
+    type: UPDATE_ADMIN_USER,
+    users: data
+  };
 }

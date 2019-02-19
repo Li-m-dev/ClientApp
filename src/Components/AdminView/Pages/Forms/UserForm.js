@@ -30,8 +30,10 @@ class UserForm extends Component {
       }
     }
   };
-  componentDidMount() {
-    // this.props.getPermissions();
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedUser !== this.props.selectedUser) {
+      this.setState({ user: this.props.selectedUser });
+    }
   }
 
   handlePermission = e => {
@@ -53,6 +55,32 @@ class UserForm extends Component {
     });
   };
 
+  resetForm = () => {
+    this.setState({
+      user: {
+        FirstName: "",
+        LastName: "",
+        Email: "",
+        LastLogin: "",
+        Phone: "",
+        Permissions: [
+          {
+            PermissionID: 0,
+            Description: ""
+          }
+        ],
+        IsActive: true,
+        Roles: {
+          Events: false,
+          Inventory: false,
+          Accounting: false,
+          Membership: false,
+          Sponsorship: false,
+          Admin: false
+        }
+      }
+    });
+  };
   handleSubmit = e => {
     e.preventDefault();
     const now = new Date();
@@ -74,9 +102,15 @@ class UserForm extends Component {
     this.setState({
       user: oldState.user
     });
-    this.props.addAdminUser(this.state.user);
+    // this.props.addAdminUser(this.state.user);
+    this.props.selectedUser.FirstName
+      ? this.props.updateAdminUser(
+          this.props.selectedUser.UserID,
+          this.state.user
+        )
+      : this.props.addAdminUser(this.state.user);
     this.props.closeForm();
-    document.getElementById("admin-staff-form").reset();
+    this.resetForm();
   };
 
   render() {
@@ -111,20 +145,7 @@ class UserForm extends Component {
       );
     });
     return (
-      <form
-        id="admin-staff-form"
-        onSubmit={
-          this.handleSubmit
-          // () =>
-          // this.props.selectedUser
-          //   ? this.props.updateAdminUser(
-          //       this.props.selectedUser.UserID,
-          //       this.props.selectedUser
-          //     )
-          //   :
-          // this.handleSubmit()
-        }
-      >
+      <form onSubmit={this.handleSubmit}>
         <label htmlFor="">
           First name:
           <input
